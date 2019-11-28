@@ -12,9 +12,9 @@ import composite.*;
  */
 public class PlayerFree implements Player{
     PlayerMusica pm = new PlayerMusica();
-    public void tocar(Musica m){
+    public void tocar(Playlist p){
         System.out.println("Com o Spotify Premium você pode ouvir música sem anúncios"
                 + " e offline por apenas R$16.90. Assine agora e tenha essas vantagens.");
-        pm.tocar(m);
+        pm.tocar(p);
     }
 }

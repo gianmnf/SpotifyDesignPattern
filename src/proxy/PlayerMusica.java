@@ -11,7 +11,7 @@ import composite.*;
  * @author DESENV
  */
 public class PlayerMusica implements Player{
-    public void tocar(Musica m){
-        m.play();
+    public void tocar(Playlist p){
+        p.play();
     }
 }

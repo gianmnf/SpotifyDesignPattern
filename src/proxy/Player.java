@@ -11,5 +11,5 @@ import composite.*;
  * @author DESENV
  */
 public interface Player {
-    public abstract void tocar(Musica m);
+    public abstract void tocar(Playlist p);
 }
