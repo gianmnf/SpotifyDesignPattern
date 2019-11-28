@@ -12,6 +12,7 @@ import composite.*;
  */
 public class PlayerMusica implements Player{
     public void tocar(Playlist p){
+        System.out.println("Tocando agora: ");
         p.play();
     }
 }

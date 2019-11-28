@@ -25,7 +25,6 @@ public class Album implements Musica{
     }
     
     public float getTempo(){
-        System.out.println("Tempo total do album: ");
         return this.m1.getTempo() + this.m2.getTempo() + this.m3.getTempo();
     }
 }
