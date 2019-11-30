@@ -5,6 +5,7 @@
  */
 package factory;
 import proxy.*;
+import composite.*;
 
 /**
  *

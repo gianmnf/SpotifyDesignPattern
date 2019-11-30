@@ -20,12 +20,15 @@ public class SpotifyDesignPattern {
         Musica s = new Single("Single Ladies - Beyonce",3.30f);
         Musica x = new Single("The Time(Dirty Bit) - Black Eyed Peas",6.25f);
         Musica xx = new Album(a,s,x);
+        FactoryPlayer fp = new FactoryPlayer();
+        Player free = fp.criaPlayer("free");
+        Player premium = fp.criaPlayer("premium");
         Playlist p = new Playlist();
         Playlist alb = new Playlist();
         alb.addMusica(xx);
         p.addMusica(a);
-        PlayerFree m = new PlayerFree();
-        m.tocar(alb);
+        free.tocar(p);
+        premium.tocar(alb);
     }
     
 }
