@@ -13,20 +13,37 @@ Implementado para uma atividade da disciplina ANÁLISE E DESENVOLVIMENTO DE SIST
 
 ## Exemplo de Código
 **Criando Singles**
+
 Musica a = new Single("Chocolate Show - Cassia Eller",5.50f);
+
 Musica s = new Single("Single Ladies - Beyonce",3.30f);
+
 Musica x = new Single("The Time(Dirty Bit) - Black Eyed Peas",6.25f);
+
 **Criando um album a partir dos Singles**
+
 Musica xx = new Album(a,s,x);
+
 **Gerando Players**
+
 FactoryPlayer fp = new FactoryPlayer();
+
 Player free = fp.criaPlayer("free");
+
 Player premium = fp.criaPlayer("premium");
+
 **Criando Playlists e adicionando músicas**
+
 Playlist p = new Playlist();
+
 Playlist alb = new Playlist();
+
 alb.addMusica(xx);
+
 p.addMusica(a);
+
 **Tocando Singles e Albuns**
+
 free.tocar(a);
+
 premium.tocar(alb);
